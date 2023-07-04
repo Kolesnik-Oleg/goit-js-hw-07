@@ -20,10 +20,10 @@ collection.insertAdjacentHTML('afterbegin', listImg)
     
 collection.onclick = (event) => {
     event.preventDefault()
-    if (!event.target.classList.contains("gallery__image")){
+    if (!event.target.classList.contains("gallery__image")) {
         return;
     }
     const instance = basicLightbox.create
         (`<img width="1400" height="900" src="${event.target.dataset.source}">`).show();
     instance.show()
-}
+};
