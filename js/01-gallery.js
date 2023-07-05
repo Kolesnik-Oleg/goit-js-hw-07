@@ -25,5 +25,4 @@ collection.onclick = (event) => {
     }
     const instance = basicLightbox.create
         (`<img width="1400" height="900" src="${event.target.dataset.source}">`).show();
-    instance.show()
 };
